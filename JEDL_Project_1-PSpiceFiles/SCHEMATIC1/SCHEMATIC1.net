@@ -1,0 +1,8 @@
+* source JEDL_PROJECT_1
+V_V2         N00125 N00357  
++SIN 0 12.6 120Hz 0 0 0
+D_D1         0 N00125 Dbreak 
+D_D2         0 N00357 Dbreak 
+D_D3         N00125 N00207 Dbreak 
+D_D4         N00357 N00207 Dbreak 
+C_C1         N00207 0  1000u  TC=0,0 
