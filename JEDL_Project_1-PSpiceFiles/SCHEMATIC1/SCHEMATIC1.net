@@ -5,5 +5,13 @@ D_D1         0 N00125 Dbreak
 D_D2         0 N00357 Dbreak 
 D_D3         N00125 N00207 Dbreak 
 D_D4         N00357 N00207 Dbreak 
-C_C1         0 N00207  1000u  TC=0,0 
-R_R1         0 N00207  1k TC=0,0 
+C_Filtering_Capacitor         0 N00207  1000u  TC=0,0 
+X_U1         N03577 N03570 N03891 N04064 N04095 0 0 N03884 N00207 N00207 N03521
++  LM723
+C_Frequency_Compensation         0 N03521  100p  TC=0,0 
+R_Current_Sense_Resistor         N03570 N03577  1k TC=0,0 
+R_RS         N03891 N03884  3k TC=0,0 
+R_RZ         0 N03891  1k TC=0,0 
+R_Between_Vref_and_NI         N04095 N04064  1k TC=0,0 
+I_I1         N03884 0 DC 500mAdc  
+C_C1         0 N03884  1000u  TC=0,0 

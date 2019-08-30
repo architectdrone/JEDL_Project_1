@@ -20,12 +20,9 @@
          ".\jedl_project_1-pspicefiles\schematic1\jedl_project_1.sim"
         (DisplayName "SCHEMATIC1-JEDL_Project_1")
         (Type "PSpice Profile")))
-    (Folder "Model Libraries"
-      (Sort User))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User)))
+    (Folder "Model Libraries")
+    (Folder "Stimulus Files")
+    (Folder "Include Files"))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "o167m805")
   (PartMRUSelector

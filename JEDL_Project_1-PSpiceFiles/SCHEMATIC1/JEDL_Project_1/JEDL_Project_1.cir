@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\JEDL_Project_1.sim ] 
+** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1.sim ] 
 
 ** Creating circuit file "JEDL_Project_1.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -10,7 +10,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 9.02 9 0.0001 SKIPBP 
+.TRAN  0 0.02 0 0.0001 SKIPBP 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

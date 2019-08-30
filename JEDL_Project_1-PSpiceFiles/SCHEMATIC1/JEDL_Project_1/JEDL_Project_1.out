@@ -1,7 +1,7 @@
 
-**** 08/29/19 17:46:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/30/19 17:04:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\JEDL_Project_1
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
 
  ****     CIRCUIT DESCRIPTION
@@ -22,7 +22,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 9.02 9 0.0001 SKIPBP 
+.TRAN  0 0.02 0 0.0001 SKIPBP 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -37,15 +37,23 @@ D_D1         0 N00125 Dbreak
 D_D2         0 N00357 Dbreak 
 D_D3         N00125 N00207 Dbreak 
 D_D4         N00357 N00207 Dbreak 
-C_C1         0 N00207  1000u  TC=0,0 
-R_R1         0 N00207  1k TC=0,0 
+C_Filtering_Capacitor         0 N00207  1000u  TC=0,0 
+X_U1         N03577 N03570 N03891 N04064 N04095 0 0 N03884 N00207 N00207 N03521
++  LM723
+C_Frequency_Compensation         0 N03521  100p  TC=0,0 
+R_Current_Sense_Resistor         N03570 N03577  1k TC=0,0 
+R_RS         N03891 N03884  3k TC=0,0 
+R_RZ         0 N03891  1k TC=0,0 
+R_Between_Vref_and_NI         N04095 N04064  1k TC=0,0 
+I_I1         N03884 0 DC 500mAdc  
+C_C1         0 N03884  1000u  TC=0,0 
 
 **** RESUMING JEDL_Project_1.cir ****
 .END
 
-**** 08/29/19 17:46:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/30/19 17:04:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\JEDL_Project_1
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
 
  ****     Diode MODEL PARAMETERS
@@ -56,18 +64,58 @@ R_R1         0 N00207  1k TC=0,0
 
 
 
-               Dbreak          
+               Dbreak          X_U1.Dz         
+          IS   10.000000E-15   50.000000E-15 
+          BV                    5.79         
+         IBV                   50.000000E-09 
+          RS     .1             4            
+         CJO  100.000000E-15                 
+
+
+**** 08/30/19 17:04:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Npn1       
+               NPN             
+       LEVEL    1            
           IS   10.000000E-15 
-          RS     .1          
-         CJO  100.000000E-15 
+          BF   55            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
 
 
 
           JOB CONCLUDED
 
-**** 08/29/19 17:46:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/30/19 17:04:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\JEDL_Project_1
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
 
  ****     JOB STATISTICS SUMMARY
@@ -77,6 +125,6 @@ R_R1         0 N00207  1k TC=0,0
 
 
 
-  License check-out time            =       99.92
-  Total job time (using Solver 1)   =         .44
+  License check-out time            =       19.51
+  Total job time (using Solver 1)   =         .11
 
