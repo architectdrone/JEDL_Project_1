@@ -6,9 +6,9 @@ D_D3            D3(1=N00125 2=N00207 ) CN @JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS5
 D_D4            D4(1=N00357 2=N00207 ) CN @JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS541@BREAKOUT.Dbreak.Normal(chips)
 C_Filtering_Capacitor          Filtering_Capacitor(1=0 2=N00207 ) CN
 +@JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS2306@ANALOG.C.Normal(chips)
-X_U1            U1(CL=N03577 CS=N03570 -=N03891 +=N04064 Vref=N04095 Vcc-=0 Vz=0 OUT=N03884 Vc=N00207 Vcc+=N00207 COMP=N03521 ) CN
-+@JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS3304@OPAMP.LM723.Normal(chips)
-C_Frequency_Compensation          Frequency_Compensation(1=0 2=N03521 ) CN
+X_U1            U1(CL=N03577 CS=N03570 -=N03891 +=N04064 Vref=N04095 Vcc-=0 Vz=N03884 OUT=N03884 Vc=N00207 Vcc+=N00207 COMP=N03521
++) CN @JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS3304@OPAMP.LM723.Normal(chips)
+C_Frequency_Compensation          Frequency_Compensation(1=N03891 2=N03521 ) CN
 +@JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS3505@ANALOG.C.Normal(chips)
 R_Current_Sense_Resistor          Current_Sense_Resistor(1=N03570 2=N03577 ) CN
 +@JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS3554@ANALOG.R.Normal(chips)
@@ -16,6 +16,5 @@ R_RS            RS(1=N03891 2=N03884 ) CN @JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS3
 R_RZ            RZ(1=0 2=N03891 ) CN @JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS3868@ANALOG.R.Normal(chips)
 R_Between_Vref_and_NI          Between_Vref_and_NI(1=N04095 2=N04064 ) CN
 +@JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS4077@ANALOG.R.Normal(chips)
-I_I1            I1(+=N03884 -=0 ) CN @JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS5440@SOURCE.IDC.Normal(chips)
-C_C1            C1(1=0 2=N03884 ) CN @JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS5776@ANALOG.C.Normal(chips)
+R_R1            R1(1=0 2=N03884 ) CN @JEDL_PROJECT_1.SCHEMATIC1(sch_1):INS6988@ANALOG.R.Normal(chips)
 .ENDALIASES

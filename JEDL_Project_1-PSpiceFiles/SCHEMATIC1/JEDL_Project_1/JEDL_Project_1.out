@@ -1,5 +1,5 @@
 
-**** 08/30/19 17:04:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/30/19 17:37:09 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -32,26 +32,25 @@
 **** INCLUDING SCHEMATIC1.net ****
 * source JEDL_PROJECT_1
 V_V2         N00125 N00357  
-+SIN 0 12.6 120Hz 0 0 0
++SIN 0 28 120Hz 0 0 0
 D_D1         0 N00125 Dbreak 
 D_D2         0 N00357 Dbreak 
 D_D3         N00125 N00207 Dbreak 
 D_D4         N00357 N00207 Dbreak 
 C_Filtering_Capacitor         0 N00207  1000u  TC=0,0 
-X_U1         N03577 N03570 N03891 N04064 N04095 0 0 N03884 N00207 N00207 N03521
-+  LM723
-C_Frequency_Compensation         0 N03521  100p  TC=0,0 
+X_U1         N03577 N03570 N03891 N04064 N04095 0 N03884 N03884 N00207 N00207
++  N03521 LM723
+C_Frequency_Compensation         N03891 N03521  100p  TC=0,0 
 R_Current_Sense_Resistor         N03570 N03577  1k TC=0,0 
-R_RS         N03891 N03884  3k TC=0,0 
-R_RZ         0 N03891  1k TC=0,0 
-R_Between_Vref_and_NI         N04095 N04064  1k TC=0,0 
-I_I1         N03884 0 DC 500mAdc  
-C_C1         0 N03884  1000u  TC=0,0 
+R_RS         N03891 N03884  5k TC=0,0 
+R_RZ         0 N03891  30k TC=0,0 
+R_Between_Vref_and_NI         N04095 N04064  4285 TC=0,0 
+R_R1         0 N03884  1k TC=0,0 
 
 **** RESUMING JEDL_Project_1.cir ****
 .END
 
-**** 08/30/19 17:04:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/30/19 17:37:09 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -72,7 +71,7 @@ C_C1         0 N03884  1000u  TC=0,0
          CJO  100.000000E-15                 
 
 
-**** 08/30/19 17:04:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/30/19 17:37:09 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -113,7 +112,7 @@ C_C1         0 N03884  1000u  TC=0,0
 
           JOB CONCLUDED
 
-**** 08/30/19 17:04:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/30/19 17:37:09 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -125,6 +124,6 @@ C_C1         0 N03884  1000u  TC=0,0
 
 
 
-  License check-out time            =       19.51
+  License check-out time            =       23.26
   Total job time (using Solver 1)   =         .11
 

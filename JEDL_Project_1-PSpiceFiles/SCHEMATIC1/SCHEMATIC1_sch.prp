@@ -108,7 +108,6 @@
                 ("device_max_ops")
             )
         )
-        ("IDC")
     )
     ("instances"
         ("V2"
@@ -121,7 +120,7 @@
                     ("pspice_param"	"FREQ")
                 )
                 ("VAMPL"
-                    ("value"	"12.6")
+                    ("value"	"28")
                     ("pspice_param"	"VAMPL")
                 )
                 ("VOFF"
@@ -403,7 +402,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"3k")
+                    ("value"	"5k")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -452,7 +451,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1k")
+                    ("value"	"30k")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -501,7 +500,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1k")
+                    ("value"	"4285")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -544,34 +543,19 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("I1"
-            ("device_name"	"IDC")
-            ("pspice_path"	"I_I1")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"500mAdc")
-                    ("pspice_param"	"DC")
-                )
-            )
-        )
-        ("C1"
-            ("device_name"	"C")
-            ("pspice_path"	"C_C1")
+        ("R1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R1")
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1000u")
+                    ("value"	"1k")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
-                ("TC2"
-                    ("value"	"0")
-                    ("pspice_param"	"TC2")
-                )
-                ("TC1"
-                    ("value"	"0")
-                    ("pspice_param"	"TC1")
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
                     ("value"	"FLAT")
@@ -581,45 +565,35 @@
                     ("value"	"")
                     ("pspice_param"	"TOLERANCE")
                 )
-                ("IC"
-                    ("value"	"")
-                    ("pspice_param"	"IC")
-                )
                 ("VOLTAGE"
-                    ("value"	"CMAX")
+                    ("value"	"RVMAX")
                     ("pspice_param"	"VOLTAGE")
                 )
-                ("CURRENT"
-                    ("value"	"CIMAX")
-                    ("pspice_param"	"CURRENT")
-                )
-                ("KNEE"
-                    ("value"	"CBMAX")
-                    ("pspice_param"	"KNEE")
-                )
                 ("SLOPE"
-                    ("value"	"CSMAX")
+                    ("value"	"RSMAX")
                     ("pspice_param"	"SLOPE")
                 )
                 ("MAX_TEMP"
-                    ("value"	"CTMAX")
+                    ("value"	"RTMAX")
                     ("pspice_param"	"MAX_TEMP")
                 )
-                ("VC1"
-                    ("value"	"0")
-                    ("pspice_param"	"VC1")
+                ("POWER"
+                    ("value"	"RMAX")
+                    ("pspice_param"	"POWER")
                 )
-                ("VC2"
+                ("TC1"
                     ("value"	"0")
-                    ("pspice_param"	"VC2")
+                    ("pspice_param"	"TC1")
+                )
+                ("TC2"
+                    ("value"	"0")
+                    ("pspice_param"	"TC2")
                 )
             )
             ("smoke_vars"
-                ("VOLTAGE"	"50.0")
-                ("CURRENT"	"1.0")
+                ("POWER"	"0.25")
                 ("SLOPE"	"0.005")
-                ("KNEE"	"125.0")
-                ("MAX_TEMP"	"125.0")
+                ("MAX_TEMP"	"200.0")
             )
         )
     )
