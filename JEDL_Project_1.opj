@@ -20,16 +20,29 @@
          ".\jedl_project_1-pspicefiles\schematic1\jedl_project_1.sim"
         (DisplayName "SCHEMATIC1-JEDL_Project_1")
         (Type "PSpice Profile")))
-    (Folder "Model Libraries")
-    (Folder "Stimulus Files")
-    (Folder "Include Files"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "o167m805")
   (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (2KBP01M_3N254
+      (FullPartName "2KBP01M_3N254.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE_FULLBRIDGE.OLB")
       (DeviceIndex "0"))
     (Dbreak
       (FullPartName "Dbreak.Normal")
@@ -41,19 +54,9 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
     (0
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (2KBP01M_3N254
-      (FullPartName "2KBP01M_3N254.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE_FULLBRIDGE.OLB")
       (DeviceIndex "0"))
     (VAC
       (FullPartName "VAC.Normal")
@@ -74,7 +77,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 1074 52 481")
-        (Scroll "21 277")
+        (Scroll "186 252")
         (Zoom "210")
         (Occurrence "/"))
       (Path "H:\00_FALL_2019\JEDL\PROJECT1\PSPICE\JEDL_PROJECT_1.DSN")

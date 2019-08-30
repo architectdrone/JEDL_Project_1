@@ -1,5 +1,5 @@
 
-**** 08/29/19 15:26:08 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/29/19 17:46:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\JEDL_Project_1
 
@@ -37,12 +37,13 @@ D_D1         0 N00125 Dbreak
 D_D2         0 N00357 Dbreak 
 D_D3         N00125 N00207 Dbreak 
 D_D4         N00357 N00207 Dbreak 
-C_C1         N00207 0  1000u  TC=0,0 
+C_C1         0 N00207  1000u  TC=0,0 
+R_R1         0 N00207  1k TC=0,0 
 
 **** RESUMING JEDL_Project_1.cir ****
 .END
 
-**** 08/29/19 15:26:08 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/29/19 17:46:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\JEDL_Project_1
 
@@ -64,7 +65,7 @@ C_C1         N00207 0  1000u  TC=0,0
 
           JOB CONCLUDED
 
-**** 08/29/19 15:26:08 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 08/29/19 17:46:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\JEDL_Project_1
 
@@ -76,6 +77,6 @@ C_C1         N00207 0  1000u  TC=0,0
 
 
 
-  License check-out time            =       99.44
-  Total job time (using Solver 1)   =         .41
+  License check-out time            =       99.92
+  Total job time (using Solver 1)   =         .44
 
