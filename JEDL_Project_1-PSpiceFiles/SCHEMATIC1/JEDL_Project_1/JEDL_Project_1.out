@@ -1,5 +1,5 @@
 
-**** 09/05/19 11:11:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/05/19 11:27:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -39,20 +39,22 @@ D_D2         0 N00357 Dbreak
 D_D3         N00351 N00579 Dbreak 
 D_D4         N00357 N00579 Dbreak 
 C_Filtering_Capacitor         0 N00579  1000u  TC=0,0 
-X_U1         N03577 N12796 N03891 N19929 N20337 0 0 N03971 N00579 N00579 N03521
+X_U1         N03577 N12796 N03891 N19929 N20337 0 0 N14816 N00579 N00579 N03521
 +  LM723
 C_Frequency_Compensation         N03891 N03521  1u  TC=0,0 
 R_Current_Sense_Resistor         N12796 N03577  1 TC=0,0 
 R_RF_Pot         N03891 N03971  8.87 TC=0,0 
 R_RI         0 N03891  3.3k TC=0,0 
 R_R1         N20337 N19754  2400 TC=0,0 
-V_V3         N19929 N19754 4
-I_I1         N03971 0 DC 10mAdc  
+I_I1         N03971 0 DC 250mAdc  
+V_V3         N19929 N19754  AC 0
++SIN 0 5 1 0 0 0
+Q_Q1         N00579 N14816 N03971 QbreakN 
 
 **** RESUMING JEDL_Project_1.cir ****
 .END
 
-**** 09/05/19 11:11:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/05/19 11:27:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -73,7 +75,7 @@ I_I1         N03971 0 DC 10mAdc
          CJO  100.000000E-15                 
 
 
-**** 09/05/19 11:11:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/05/19 11:27:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -86,35 +88,35 @@ I_I1         N03971 0 DC 10mAdc
 
 
 
-               X_U1.Npn1       
-               NPN             
-       LEVEL    1            
-          IS   10.000000E-15 
-          BF   55            
-          NF    1            
-          BR    1            
-          NR    1            
-         ISS    0            
-          RE    0            
-          RC    0            
-         CJE    0            
-         VJE     .75         
-         CJC    0            
-         VJC     .75         
-         MJC     .33         
-        XCJC    1            
-         CJS    0            
-         VJS     .75         
-          KF    0            
-          AF    1            
-          CN    2.42         
-           D     .87         
+               QbreakN         X_U1.Npn1       
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  100.000000E-18   10.000000E-15 
+          BF   50              55            
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
 
 
 
           JOB CONCLUDED
 
-**** 09/05/19 11:11:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/05/19 11:27:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -126,6 +128,6 @@ I_I1         N03971 0 DC 10mAdc
 
 
 
-  License check-out time            =        5.83
-  Total job time (using Solver 1)   =         .63
+  License check-out time            =       10.80
+  Total job time (using Solver 1)   =         .66
 
