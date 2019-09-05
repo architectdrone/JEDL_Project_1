@@ -1,5 +1,5 @@
 
-**** 08/30/19 16:47:27 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/04/19 16:33:12 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
@@ -18,6 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
+.LIB "../../../jedl_project_1-pspicefiles/jedl_project_1.lib" 
 * From [PSPICE NETLIST] section of C:\Users\o167m805\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 
@@ -31,25 +32,24 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source JEDL_PROJECT_1
-V_V2         N00125 N00357  
-+SIN 0 12.6 120Hz 0 0 0
-D_D1         0 N00125 Dbreak 
+V_V2         N00351 N00357  
++SIN 0 28 120Hz 0 0 0
+D_D1         0 N00351 Dbreak 
 D_D2         0 N00357 Dbreak 
-D_D3         N00125 N00207 Dbreak 
-D_D4         N00357 N00207 Dbreak 
-C_Filtering         Capacitor 0 N00207  100u  TC=0,0 
-X_U1         N03577 N03570 N03891 N04064 N04095 0 0 N03884 N00207 N00207 N03521
-+  LM723
-C_Frequency         Compensation 0 N03521  1n  TC=0,0 
-R_Current         Sense Resistor N03570 N03577  1k TC=0,0 
-----------------------------------------$
-ERROR(ORPSIM-16152): Invalid number: Error while converting token 'N03577' to double value. Token can be a constant or expression
-R_RS         N03891 N03884  1k TC=0,0 
-R_RZ         0 N03891  1k TC=0,0 
-R_Load         0 N03884  1k TC=0,0 
-R_Between         Vref and NI N04095 N04064  1k TC=0,0 
-------------------------------$
-ERROR(ORPSIM-16152): Invalid number: Error while converting token 'N04095' to double value. Token can be a constant or expression
+D_D3         N00351 N00579 Dbreak 
+D_D4         N00357 N00579 Dbreak 
+C_Filtering_Capacitor         0 N00579  1000u  TC=0,0 
+X_U1         N03577 N12796 N03891 N04064 N12295 0 N12295 N04064 N00579 N00579
++  N03521 LM723
+C_Frequency_Compensation         N03891 N03521  10u  TC=0,0 
+R_Current_Sense_Resistor         N12796 N03577  0 TC=0,0 
+------------------------------------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+R_RF_Pot         N03891 N03971  6.85k TC=0,0 
+R_RI         0 N03891  3.3k TC=0,0 
+Q_Q1         N00579 N04064 N03971 Qbreakn 
+R_Load         0 N03971  1k TC=0,0 
+R_R1         N12295 N04064  2400 TC=0,0 
 
 **** RESUMING JEDL_Project_1.cir ****
 .END

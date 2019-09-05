@@ -1,7 +1,7 @@
 
-**** 08/30/19 17:37:09 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/05/19 11:11:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,11 +18,12 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
+.LIB "../../../jedl_project_1-pspicefiles/jedl_project_1.lib" 
 * From [PSPICE NETLIST] section of C:\Users\o167m805\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 0.02 0 0.0001 SKIPBP 
+.TRAN  0 0.6 0 0.0001 SKIPBP 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -31,28 +32,29 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source JEDL_PROJECT_1
-V_V2         N00125 N00357  
+V_V2         N00351 N00357  
 +SIN 0 28 120Hz 0 0 0
-D_D1         0 N00125 Dbreak 
+D_D1         0 N00351 Dbreak 
 D_D2         0 N00357 Dbreak 
-D_D3         N00125 N00207 Dbreak 
-D_D4         N00357 N00207 Dbreak 
-C_Filtering_Capacitor         0 N00207  1000u  TC=0,0 
-X_U1         N03577 N03570 N03891 N04064 N04095 0 N03884 N03884 N00207 N00207
-+  N03521 LM723
-C_Frequency_Compensation         N03891 N03521  100p  TC=0,0 
-R_Current_Sense_Resistor         N03570 N03577  1k TC=0,0 
-R_RS         N03891 N03884  5k TC=0,0 
-R_RZ         0 N03891  30k TC=0,0 
-R_Between_Vref_and_NI         N04095 N04064  4285 TC=0,0 
-R_R1         0 N03884  1k TC=0,0 
+D_D3         N00351 N00579 Dbreak 
+D_D4         N00357 N00579 Dbreak 
+C_Filtering_Capacitor         0 N00579  1000u  TC=0,0 
+X_U1         N03577 N12796 N03891 N19929 N20337 0 0 N03971 N00579 N00579 N03521
++  LM723
+C_Frequency_Compensation         N03891 N03521  1u  TC=0,0 
+R_Current_Sense_Resistor         N12796 N03577  1 TC=0,0 
+R_RF_Pot         N03891 N03971  8.87 TC=0,0 
+R_RI         0 N03891  3.3k TC=0,0 
+R_R1         N20337 N19754  2400 TC=0,0 
+V_V3         N19929 N19754 4
+I_I1         N03971 0 DC 10mAdc  
 
 **** RESUMING JEDL_Project_1.cir ****
 .END
 
-**** 08/30/19 17:37:09 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/05/19 11:11:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
 
  ****     Diode MODEL PARAMETERS
@@ -71,9 +73,9 @@ R_R1         0 N03884  1k TC=0,0
          CJO  100.000000E-15                 
 
 
-**** 08/30/19 17:37:09 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/05/19 11:11:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
 
  ****     BJT MODEL PARAMETERS
@@ -112,9 +114,9 @@ R_R1         0 N03884  1k TC=0,0
 
           JOB CONCLUDED
 
-**** 08/30/19 17:37:09 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/05/19 11:11:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ h:\00_fall_2019\jedl\project1\pspice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1
 
 
  ****     JOB STATISTICS SUMMARY
@@ -124,6 +126,6 @@ R_R1         0 N03884  1k TC=0,0
 
 
 
-  License check-out time            =       23.26
-  Total job time (using Solver 1)   =         .11
+  License check-out time            =        5.83
+  Total job time (using Solver 1)   =         .63
 
