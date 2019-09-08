@@ -12,8 +12,12 @@ C_Frequency_Compensation         N04033 N03521  1u  TC=0,0
 R_RI         0 N04033  3.3k TC=0,0 
 R_R1         N29509 N29495  1925 TC=0,0 
 Q_Q1         N00579 N14816 N03579 QbreakN 
-V_V3         N29495 0 3.33333
+V_ARDUINO         N29495 0 3.33333
 R_RLOAD         0 N03971  4 TC=0,0 
 R_R3         0 N29598  1k TC=0,0 
 R_R5         N04033 N03971  4.62k TC=0,0 
 R_RSC         N03579 N03971  0.853 TC=0,0 
+V_V3         N33650 0  
++PULSE 0 5 0 1n 1n 1.3333333m 2m
+C_C1         0 N33652  68u  TC=0,0 
+R_R6         N33650 N33652  1k TC=0,0 
