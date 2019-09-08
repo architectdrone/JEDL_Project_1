@@ -1,7 +1,7 @@
 
-**** 09/08/19 12:45:38 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/08/19 13:22:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Project_1-master\jedl_project_1-pspicefiles\schematic1\jedl_p
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Orig\JEDL_Project_1\jedl_project_1-pspicefiles\schematic1\jed
 
 
  ****     CIRCUIT DESCRIPTION
@@ -43,20 +43,20 @@ X_U1         N03579 N03971 N04033 N29509 N29598 0 N14816 N14816 N00579 N00579
 +  N03521 LM723
 C_Frequency_Compensation         N04033 N03521  1u  TC=0,0 
 R_RI         0 N04033  3.3k TC=0,0 
-R_R1         N29509 N29495  2400 TC=0,0 
+R_R1         N29509 N29495  1925 TC=0,0 
 Q_Q1         N00579 N14816 N03579 QbreakN 
-V_V3         N29495 0 5
-R_R2         0 N03971  1 TC=0,0 
+V_V3         N29495 0 3.33333
+R_RLOAD         0 N03971  4 TC=0,0 
 R_R3         0 N29598  1k TC=0,0 
 R_R5         N04033 N03971  4.62k TC=0,0 
-R_R6         N03579 N03971  0.87 TC=0,0 
+R_RSC         N03579 N03971  0.853 TC=0,0 
 
 **** RESUMING JEDL_Project_1.cir ****
 .END
 
-**** 09/08/19 12:45:38 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/08/19 13:22:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Project_1-master\jedl_project_1-pspicefiles\schematic1\jedl_p
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Orig\JEDL_Project_1\jedl_project_1-pspicefiles\schematic1\jed
 
 
  ****     Diode MODEL PARAMETERS
@@ -75,9 +75,9 @@ R_R6         N03579 N03971  0.87 TC=0,0
          CJO  100.000000E-15                 
 
 
-**** 09/08/19 12:45:38 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/08/19 13:22:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Project_1-master\jedl_project_1-pspicefiles\schematic1\jedl_p
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Orig\JEDL_Project_1\jedl_project_1-pspicefiles\schematic1\jed
 
 
  ****     BJT MODEL PARAMETERS
@@ -116,9 +116,9 @@ R_R6         N03579 N03971  0.87 TC=0,0
 
           JOB CONCLUDED
 
-**** 09/08/19 12:45:38 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/08/19 13:22:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Project_1-master\jedl_project_1-pspicefiles\schematic1\jedl_p
+ ** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Orig\JEDL_Project_1\jedl_project_1-pspicefiles\schematic1\jed
 
 
  ****     JOB STATISTICS SUMMARY
@@ -128,6 +128,6 @@ R_R6         N03579 N03971  0.87 TC=0,0
 
 
 
-  License check-out time            =        2.76
-  Total job time (using Solver 1)   =         .13
+  License check-out time            =        1.49
+  Total job time (using Solver 1)   =         .16
 

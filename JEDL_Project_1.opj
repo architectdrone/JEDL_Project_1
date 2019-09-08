@@ -83,14 +83,11 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\EvanB\Desktop\JEDL_Project_1-master\jedl_project_1.dsn")
+         "C:\Users\EvanB\Desktop\JEDL_Orig\JEDL_Project_1\jedl_project_1.dsn")
       (Path "Design Resources"
-         "C:\Users\EvanB\Desktop\JEDL_Project_1-master\jedl_project_1.dsn"
+         "C:\Users\EvanB\Desktop\JEDL_Orig\JEDL_Project_1\jedl_project_1.dsn"
          "SCHEMATIC1")
-      (Path "Outputs")
-      (Select "Design Resources"
-         "C:\Users\EvanB\Desktop\JEDL_Project_1-master\jedl_project_1.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -100,11 +97,12 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 203 1835 -18 437")
-        (Scroll "-274 0")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1688 52 511")
+        (Scroll "-421 0")
         (Zoom "100")
         (Occurrence "/"))
-      (Path "C:\USERS\EVANB\DESKTOP\JEDL_PROJECT_1-MASTER\JEDL_PROJECT_1.DSN")
+      (Path
+         "C:\USERS\EVANB\DESKTOP\JEDL_ORIG\JEDL_PROJECT_1\JEDL_PROJECT_1.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.2\tools\capture\library"))
