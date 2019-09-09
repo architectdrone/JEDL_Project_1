@@ -1,3 +1,3 @@
- lib=H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\jedl_project_1.lib, offset=43, size=27
- lib=c:\cadence\spb_17.2\tools\PSpice\Library\breakout.lib, offset=431, size=44
- lib=c:\cadence\spb_17.2\tools\PSpice\Library\opamp.lib, offset=257850, size=1678
+ lib=C:\Users\EvanB\Desktop\JEDL_Orig\JEDL_Project_1\jedl_project_1-pspicefiles\jedl_project_1.lib, offset=43, size=27
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\breakout.lib, offset=431, size=44
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\opamp.lib, offset=257850, size=1678

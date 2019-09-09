@@ -1,0 +1,12 @@
+# Cadence Design Systems, Inc.
+# Allegro PCB Router Automatic Router
+# Allegro PCB Router v17-2-51 made 2019/01/15 at 11:46:29
+# Running on host 
+# 
+#            Command Line Parameters
+#            -----------------------
+# Design File Name : C:\Users\e329b498\Desktop\JEDL_Project_1-master\JEDL_PROJECT_1.DSN
+# No "-do" or "-docmd" switches specified on command line.
+# Status File Name : C:\Users\e329b498\Desktop\JEDL_Project_1-master\monitor.sts
+quit -c
+quit -c
