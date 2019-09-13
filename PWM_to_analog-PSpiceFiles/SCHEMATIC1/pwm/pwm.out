@@ -1,0 +1,87 @@
+
+**** 09/05/19 17:56:53 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pwm"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\PWM_to_analog-PSpiceFiles\SCHEMATIC1\pwm.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pwm.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\o167m805\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PWM_TO_ANALOG
+V_V1         N00128 0  
++PULSE 1 0 1 1E-9 1E-9 1 10
+R_R1         N00140 N00128  1k TC=0,0 
+C_C1         0 N00140  0.636  TC=0,0 
+
+**** RESUMING pwm.cir ****
+.END
+
+**** 09/05/19 17:56:53 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pwm"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\PWM_to_analog-PSpiceFiles\SCHEMATIC1\pwm.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00128)    1.0000 (N00140)    1.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/05/19 17:56:53 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pwm"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\PWM_to_analog-PSpiceFiles\SCHEMATIC1\pwm.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        1.05
+  Total job time (using Solver 1)   =         .06
+

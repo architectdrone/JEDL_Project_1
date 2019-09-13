@@ -1,0 +1,47 @@
+
+**** 09/05/19 17:51:24 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-pwm"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\PWM_to_analog-PSpiceFiles\SCHEMATIC1\pwm.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pwm.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\o167m805\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PWM_TO_ANALOG
+V_V1         N00128 N00144  
++PULSE 1 0 1 0 0 1 1
+R_R1         N00140 N00128  1k TC=0,0 
+C_C1         N00144 N00140  0.636  TC=0,0 
+
+**** RESUMING pwm.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00128 is floating
+
+ERROR(ORPSIM-15142): Node N00144 is floating
+
+ERROR(ORPSIM-15142): Node N00140 is floating
+

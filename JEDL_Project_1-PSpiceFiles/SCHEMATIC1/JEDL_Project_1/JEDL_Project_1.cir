@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-JEDL_Project_1"  [ C:\Users\EvanB\Desktop\JEDL_Orig\JEDL_Project_1\jedl_project_1-pspicefiles\schematic1\jedl_project_1.sim ] 
+** Profile: "SCHEMATIC1-JEDL_Project_1"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1-pspicefiles\schematic1\jedl_project_1.sim ] 
 
 ** Creating circuit file "JEDL_Project_1.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -7,11 +7,11 @@
 * Profile Libraries :
 * Local Libraries :
 .LIB "../../../jedl_project_1-pspicefiles/jedl_project_1.lib" 
-* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\o167m805\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 1 0 0.00005 SKIPBP 
+.TRAN  0 1 0 0.001 SKIPBP 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

@@ -3,7 +3,7 @@
 @Settings: 0 1
 @General:
 ProfileName= "JEDL_Project_1" 
-ProfileFile= "JEDL_Project_1.sim" 
+ProfileFile= "jedl_project_1.sim" 
 Connectivity= "SCHEMATIC1.net" 
 NetlistFile= "JEDL_Project_1.cir" 
 DataFile= "JEDL_Project_1.dat" 
@@ -17,7 +17,7 @@ Notes=
 +0 "1" 
 +1 "" 
 +2 "0" 
-+3 "0.00005" 
++3 "0.001" 
 +4 "" 
 +5 "" 
 +6 "" 

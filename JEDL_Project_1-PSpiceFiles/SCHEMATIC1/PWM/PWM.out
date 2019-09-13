@@ -1,0 +1,166 @@
+
+**** 09/05/19 17:32:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PWM"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\PWM.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PWM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../jedl_project_1-pspicefiles/jedl_project_1.lib" 
+* From [PSPICE NETLIST] section of C:\Users\o167m805\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2s 0 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source JEDL_PROJECT_1
+V_V2         N00351 N00357  
++SIN 0 28 120Hz 0 0 0
+D_D1         0 N00351 Dbreak 
+D_D2         0 N00357 Dbreak 
+D_D3         N00351 N00579 Dbreak 
+D_D4         N00357 N00579 Dbreak 
+C_Filtering_Capacitor         0 N00579  1000u  TC=0,0 
+X_U1         N03577 N03577 N03971 N19929 N19754 0 0 N14816 N00579 N00579 N03521
++  LM723
+C_Frequency_Compensation         N03971 N03521  1u  TC=0,0 
+R_RI         0 N03971  3.3k TC=0,0 
+Q_Q1         N00579 N14816 N03971 QbreakN 
+V_V3         N19929 N19754 0Vdc
+R_R1         0 N03971  1k TC=0,0 
+
+**** RESUMING PWM.cir ****
+.END
+
+**** 09/05/19 17:32:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PWM"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\PWM.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          X_U1.Dz         
+          IS   10.000000E-15   50.000000E-15 
+          BV                    5.79         
+         IBV                   50.000000E-09 
+          RS     .1             4            
+         CJO  100.000000E-15                 
+
+
+**** 09/05/19 17:32:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PWM"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\PWM.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         X_U1.Npn1       
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  100.000000E-18   10.000000E-15 
+          BF   50              55            
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 09/05/19 17:32:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PWM"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\PWM.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00351)    3.1643 (N00357)    3.1643 (N00579)    6.3291 (N03521)    6.9698     
+
+(N03577)    3.4899 (N03971)    4.9149 (N14816)    5.7366 (N19754)    7.0361     
+
+(N19929)    7.0361 (X_U1.20)    6.3258                   (X_U1.21)    6.3278    
+
+(X_U1.22)    7.1500                   (X_U1.23)    5.7366                       
+
+(X_U1.24)     .0012                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -3.553E-15
+    V_V3        -7.591E-03
+    X_U1.Vmon    8.616E-05
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/05/19 17:32:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PWM"  [ H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\PWM.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .58
+

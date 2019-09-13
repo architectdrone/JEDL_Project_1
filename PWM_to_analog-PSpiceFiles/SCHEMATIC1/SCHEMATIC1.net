@@ -1,0 +1,5 @@
+* source PWM_TO_ANALOG
+V_V1         N00128 0  
++PULSE 1 0 1 1E-9 1E-9 1 10
+R_R1         N00140 N00128  1k TC=0,0 
+C_C1         0 N00140  0.636  TC=0,0 
