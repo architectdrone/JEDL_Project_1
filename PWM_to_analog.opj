@@ -50,7 +50,10 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Select "Design Resources"
+         "H:\00_Fall_2019\JEDL\Project1\PSpice\pwm_to_analog.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -60,8 +63,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1041 52 481")
-        (Scroll "-84 0")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1041 52 481")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path "H:\00_FALL_2019\JEDL\PROJECT1\PSPICE\PWM_TO_ANALOG.DSN")

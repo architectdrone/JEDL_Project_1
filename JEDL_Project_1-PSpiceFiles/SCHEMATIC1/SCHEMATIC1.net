@@ -1,24 +1,24 @@
 * source JEDL_PROJECT_1
-V_V2         N00351 N00357  
+V_V2         N00351 0  
 +SIN 0 28 120Hz 0 0 0
 D_D1         0 N00351 Dbreak 
-D_D2         0 N00357 Dbreak 
+D_D2         0 0 Dbreak 
 D_D3         N00351 N00579 Dbreak 
-D_D4         N00357 N00579 Dbreak 
+D_D4         0 N00579 Dbreak 
 C_Filtering_Capacitor         0 N00579  1000u  TC=0,0 
 X_U1         N03579 N03973 N04033 N37582 N29598 0 N14816 N14816 N00579 N00579
 +  N03521 LM723
 C_Frequency_Compensation         N04033 N03521  1u  TC=0,0 
-R_RI         0 N04033  3.3k TC=0,0 
+R_RI         0 N04033  3.243k TC=0,0 
 Q_Q1         N00579 N14816 N03579 QbreakN 
-R_RLOAD         0 N03973  1k TC=0,0 
-R_R3         0 N29598  1k TC=0,0 
-R_R5         N04033 N03973  4.62k TC=0,0 
-R_RSC         N03579 N03973  0.853 TC=0,0 
+R_R3         0 N29598  0.981k TC=0,0 
+R_R5         N04033 N03973  4.56k TC=0,0 
+R_RSC         N03579 N03973  0.95 TC=0,0 
 C_C1         N37389 0  100u  TC=0,0 
 V_V3         N37381 0  
 +PULSE 0 5 0 1n 1n 1.3333333m 2m
 R_R6         N37381 N37389  680 TC=0,0 
 V_Arduino         N37582 0 5Vdc
-R_R7         N39401 N03579  470k TC=0,0 
+R_R7         N39401 N03579  468k TC=0,0 
 R_R8         0 N39401  330k TC=0,0 
+R_R9         0 N03973  1k TC=0,0 

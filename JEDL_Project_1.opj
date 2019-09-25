@@ -37,6 +37,11 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (VDC
       (FullPartName "VDC.Normal")
       (LibraryName
@@ -70,11 +75,6 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
-    (IDC
-      (FullPartName "IDC.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
     (2KBP01M_3N254
       (FullPartName "2KBP01M_3N254.Normal")
       (LibraryName
@@ -88,16 +88,30 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1.dsn")
-      (Path "Design Resources"
-         "H:\00_Fall_2019\JEDL\Project1\PSpice\jedl_project_1.dsn" "SCHEMATIC1")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 0 200 0 663"))
-      (Tab 0)))
+      (Tab 0))
+    (Doc
+      (Type "TextFile")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 985 0 425"))
+      (Path
+         "H:\00_Fall_2019\JEDL\Project1\PSpice\JEDL_Project_1-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")
+      (Scroll "0"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 78 1067 78 507")
+        (Scroll "1087 888")
+        (Zoom "316")
+        (Occurrence "/"))
+      (Path "H:\00_FALL_2019\JEDL\PROJECT1\PSPICE\JEDL_PROJECT_1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
   (LastUsedLibraryBrowseDirectory
      "C:\Cadence\SPB_17.2\tools\capture\library\pspice"))
